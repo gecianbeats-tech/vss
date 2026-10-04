@@ -1,0 +1,19 @@
+{
+  "name": "vss-community-backend",
+  "version": "2.1.0",
+  "private": true,
+  "description": "VSS student portal with PostgreSQL persistence, admin dashboard, departments, member profiles, notices, events and helpdesk",
+  "main": "server.js",
+  "scripts": { "start": "node server.js", "dev": "node --watch server.js", "check": "node --check server.js", "migrate:sqlite": "node migrate-sqlite-to-postgres.js" },
+  "engines": { "node": ">=20" },
+  "dependencies": {
+    "bcryptjs": "^2.4.3",
+    "dotenv": "^16.4.7",
+    "express": "^4.21.2",
+    "express-rate-limit": "^7.5.0",
+    "helmet": "^8.0.0",
+    "jsonwebtoken": "^9.0.2",
+    "pg": "^8.13.1"
+  },
+  "optionalDependencies": { "better-sqlite3": "^11.8.1" }
+}
